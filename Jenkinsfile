@@ -9,7 +9,7 @@ pipeline {
         }
         stage('remote copy to nginx server') {
             steps {
-                sh 'scp -i index.html ubuntu@172.31.45.226:/usr/share/nginx/html/index.html'
+                sh 'scp -i /home/ubuntu/key.pem index.html ubuntu@172.31.45.226:/usr/share/nginx/html/index.html'
             }
         }
         
