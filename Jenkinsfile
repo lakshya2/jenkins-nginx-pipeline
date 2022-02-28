@@ -9,7 +9,7 @@ pipeline {
         }
         stage('remote copy to nginx server') {
             steps {
-                sh sudo scp index.html ubuntu@172.31.45.226:/usr/share/nginx/html/index.html
+                sh scp index.html root@172.31.45.226: /usr/share/nginx/html/index.html
             }
         }
         
