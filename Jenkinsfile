@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Declarative SCM Checkout') {
             steps {
-                 sh git clone 'https://github.com/Krishna3-cloud/jenkins-nginx-pipeline.git'
+                 sh 'git clone 'https://github.com/Krishna3-cloud/jenkins-nginx-pipeline.git''
             }
         }
         stage('remote copy to nginx server') {
