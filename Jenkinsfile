@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('get git repository') {
             steps {
-                 git credentialsId: '163d4f57-b8ef-4eaf-b037-bb1b6c65fe01', url: 'https://github.com/Krishna3-cloud/jenkins-nginx-pipeline.git'
+                git branch: 'main', credentialsId: '2ad6cb5a-8dc5-4820-b8dc-dc3eb755ecc6', url: 'https://github.com/paawanyadav/jenkins-nginx-pipeline.git'
             }
         }
         stage('remote copy to nginx server') {
             steps {
-                sh 'scp -i /home/ubuntu/key.pem index.html ubuntu@172.31.45.226:/var/www/html/index.html'
+                sh 'scp -i /home/pawan/Downloads/LEMPAWS.pem index.html ubuntu@172.31.83.124:/var/www/html/index.html'
             }
         }
         
