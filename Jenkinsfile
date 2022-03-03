@@ -9,7 +9,7 @@ pipeline {
         }
         stage('remote copy to nginx server') {
             steps {
-                sh 'scp -i /home/ubuntu/LEMPAWS.pem index.html ubuntu@172.31.83.124:/var/www/html/index.html'
+                sh 'scp -i /home/pawan/Downloads/LEMPAWS.pem index.html ubuntu@172.31.83.124:/var/www/html/index.html'
             }
         }
         
