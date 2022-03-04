@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('get git repository') {
             steps {
-                git branch: 'master', credentialsId: '6d8a218a-670f-4df4-868b-23621e541445', url: 'https://github.com/lakshya2/jenkins-nginx-pipeline.git'
+               git credentialsId: '0f716d97-7c49-40ec-b8be-d4be71a1fa58', url: 'https://github.com/lakshya2/jenkins-nginx-pipeline.git'
             }
             
         }
