@@ -9,7 +9,7 @@ pipeline {
         }
         stage('remote copy to nginx server') {
             steps {
-                sh 'scp -i /home/pawan/Downloads/LEMPAWS.pem -o StrictHostKeyChecking=no index.html ubuntu@34.203.243.8:/var/www/html/index.html'
+                sh 'scp -i /home/lakshya/Downloads/ngi.pem -o StrictHostKeyChecking=no index.html ubuntu@15.207.107.213:/var/www/html/index.html'
             }
         }
         
