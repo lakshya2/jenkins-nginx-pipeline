@@ -4,8 +4,9 @@ pipeline {
     stages {
         stage('get git repository') {
             steps {
-                git branch: 'master', credentialsId: '2ad6cb5a-8dc5-4820-b8dc-dc3eb755ecc6', url: 'https://github.com/paawanyadav/jenkins-nginx-pipeline.git'
+                git branch: 'master', credentialsId: '6d8a218a-670f-4df4-868b-23621e541445', url: 'https://github.com/lakshya2/jenkins-nginx-pipeline.git'
             }
+            
         }
         stage('remote copy to nginx server') {
             steps {
